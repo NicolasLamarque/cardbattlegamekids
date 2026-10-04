@@ -1,0 +1,1005 @@
+[
+    {
+        "id":  127691,
+        "name":  {
+                     "full":  "Satoru Gojou",
+                     "native":  "五条悟"
+                 },
+        "image":  {
+                      "local":  "satoru-gojou-127691.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b127691-9zqh1xpIubn7.png",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b127691-9zqh1xpIubn7.png"
+                  },
+        "favourites":  41685,
+        "role":  "MAIN",
+        "seriesId":  113415,
+        "seriesTitle":  "Jujutsu Kaisen",
+        "seriesColor":  "#e45d5d"
+    },
+    {
+        "id":  127212,
+        "name":  {
+                     "full":  "Yuuji Itadori",
+                     "native":  "虎杖悠仁"
+                 },
+        "image":  {
+                      "local":  "yuuji-itadori-127212.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b127212-FVm2tD0erQ5B.png",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b127212-FVm2tD0erQ5B.png"
+                  },
+        "favourites":  22730,
+        "role":  "MAIN",
+        "seriesId":  113415,
+        "seriesTitle":  "Jujutsu Kaisen",
+        "seriesColor":  "#e45d5d"
+    },
+    {
+        "id":  126635,
+        "name":  {
+                     "full":  "Megumi Fushiguro",
+                     "native":  "伏黒恵"
+                 },
+        "image":  {
+                      "local":  "megumi-fushiguro-126635.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b126635-L0y3I92JSUkN.png",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b126635-L0y3I92JSUkN.png"
+                  },
+        "favourites":  18761,
+        "role":  "MAIN",
+        "seriesId":  113415,
+        "seriesTitle":  "Jujutsu Kaisen",
+        "seriesColor":  "#e45d5d"
+    },
+    {
+        "id":  133700,
+        "name":  {
+                     "full":  "Nobara Kugisaki",
+                     "native":  "釘崎野薔薇"
+                 },
+        "image":  {
+                      "local":  "nobara-kugisaki-133700.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b133700-f6sOO3TcgLV6.png",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b133700-f6sOO3TcgLV6.png"
+                  },
+        "favourites":  14687,
+        "role":  "MAIN",
+        "seriesId":  113415,
+        "seriesTitle":  "Jujutsu Kaisen",
+        "seriesColor":  "#e45d5d"
+    },
+    {
+        "id":  133704,
+        "name":  {
+                     "full":  "Kento Nanami",
+                     "native":  "七海建人"
+                 },
+        "image":  {
+                      "local":  "kento-nanami-133704.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b133704-8wLTGjc234q2.png",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b133704-8wLTGjc234q2.png"
+                  },
+        "favourites":  14352,
+        "role":  "SUPPORTING",
+        "seriesId":  113415,
+        "seriesTitle":  "Jujutsu Kaisen",
+        "seriesColor":  "#e45d5d"
+    },
+    {
+        "id":  134167,
+        "name":  {
+                     "full":  "Maki Zenin",
+                     "native":  "禪院真希"
+                 },
+        "image":  {
+                      "local":  "maki-zenin-134167.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b134167-5TCytk45YByD.png",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b134167-5TCytk45YByD.png"
+                  },
+        "favourites":  13599,
+        "role":  "SUPPORTING",
+        "seriesId":  113415,
+        "seriesTitle":  "Jujutsu Kaisen",
+        "seriesColor":  "#e45d5d"
+    },
+    {
+        "id":  133701,
+        "name":  {
+                     "full":  "Sukuna",
+                     "native":  "宿儺"
+                 },
+        "image":  {
+                      "local":  "sukuna-133701.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b133701-rCQuDpHr3UZL.png",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b133701-rCQuDpHr3UZL.png"
+                  },
+        "favourites":  12639,
+        "role":  "SUPPORTING",
+        "seriesId":  113415,
+        "seriesTitle":  "Jujutsu Kaisen",
+        "seriesColor":  "#e45d5d"
+    },
+    {
+        "id":  129571,
+        "name":  {
+                     "full":  "Yuuta Okkotsu",
+                     "native":  "乙骨憂太"
+                 },
+        "image":  {
+                      "local":  "yuuta-okkotsu-129571.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b129571-GHJk7gviHOOw.jpg",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b129571-GHJk7gviHOOw.jpg"
+                  },
+        "favourites":  11839,
+        "role":  "MAIN",
+        "seriesId":  131573,
+        "seriesTitle":  "Jujutsu Kaisen 0",
+        "seriesColor":  "#f1c95d"
+    },
+    {
+        "id":  157115,
+        "name":  {
+                     "full":  "Toge Inumaki",
+                     "native":  "狗巻棘"
+                 },
+        "image":  {
+                      "local":  "toge-inumaki-157115.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b157115-kdhRYQdVhH95.png",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b157115-kdhRYQdVhH95.png"
+                  },
+        "favourites":  10693,
+        "role":  "SUPPORTING",
+        "seriesId":  113415,
+        "seriesTitle":  "Jujutsu Kaisen",
+        "seriesColor":  "#e45d5d"
+    },
+    {
+        "id":  133699,
+        "name":  {
+                     "full":  "Suguru Getou",
+                     "native":  "夏油傑"
+                 },
+        "image":  {
+                      "local":  "suguru-getou-133699.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b133699-FCnXaISgazAi.png",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b133699-FCnXaISgazAi.png"
+                  },
+        "favourites":  8393,
+        "role":  "SUPPORTING",
+        "seriesId":  113415,
+        "seriesTitle":  "Jujutsu Kaisen",
+        "seriesColor":  "#e45d5d"
+    },
+    {
+        "id":  162722,
+        "name":  {
+                     "full":  "Touji Fushiguro",
+                     "native":  "伏黒甚爾"
+                 },
+        "image":  {
+                      "local":  "touji-fushiguro-162722.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b162722-btzdghBizxKS.jpg",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b162722-btzdghBizxKS.jpg"
+                  },
+        "favourites":  7796,
+        "role":  "SUPPORTING",
+        "seriesId":  145064,
+        "seriesTitle":  "Jujutsu Kaisen 2nd Season",
+        "seriesColor":  "#a178d6"
+    },
+    {
+        "id":  137975,
+        "name":  {
+                     "full":  "Aoi Toudou",
+                     "native":  "東堂葵"
+                 },
+        "image":  {
+                      "local":  "aoi-toudou-137975.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b137975-6TH7PiLWJaqy.png",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b137975-6TH7PiLWJaqy.png"
+                  },
+        "favourites":  7514,
+        "role":  "SUPPORTING",
+        "seriesId":  113415,
+        "seriesTitle":  "Jujutsu Kaisen",
+        "seriesColor":  "#e45d5d"
+    },
+    {
+        "id":  157116,
+        "name":  {
+                     "full":  "Chousou",
+                     "native":  "脹相"
+                 },
+        "image":  {
+                      "local":  "chousou-157116.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b157116-2jYQf3y8NeTZ.png",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b157116-2jYQf3y8NeTZ.png"
+                  },
+        "favourites":  6420,
+        "role":  "SUPPORTING",
+        "seriesId":  113415,
+        "seriesTitle":  "Jujutsu Kaisen",
+        "seriesColor":  "#e45d5d"
+    },
+    {
+        "id":  133702,
+        "name":  {
+                     "full":  "Mahito",
+                     "native":  "真人"
+                 },
+        "image":  {
+                      "local":  "mahito-133702.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b133702-Y7JRG5vAvjIL.png",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b133702-Y7JRG5vAvjIL.png"
+                  },
+        "favourites":  3061,
+        "role":  "SUPPORTING",
+        "seriesId":  113415,
+        "seriesTitle":  "Jujutsu Kaisen",
+        "seriesColor":  "#e45d5d"
+    },
+    {
+        "id":  156848,
+        "name":  {
+                     "full":  "Kasumi Miwa",
+                     "native":  "三輪霞"
+                 },
+        "image":  {
+                      "local":  "kasumi-miwa-156848.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b156848-Rf0tuoQCNyZV.png",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b156848-Rf0tuoQCNyZV.png"
+                  },
+        "favourites":  3041,
+        "role":  "SUPPORTING",
+        "seriesId":  113415,
+        "seriesTitle":  "Jujutsu Kaisen",
+        "seriesColor":  "#e45d5d"
+    },
+    {
+        "id":  137974,
+        "name":  {
+                     "full":  "Panda",
+                     "native":  "パンダ"
+                 },
+        "image":  {
+                      "local":  "panda-137974.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b137974-9qnK3DPrvLKh.jpg",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b137974-9qnK3DPrvLKh.jpg"
+                  },
+        "favourites":  2717,
+        "role":  "SUPPORTING",
+        "seriesId":  113415,
+        "seriesTitle":  "Jujutsu Kaisen",
+        "seriesColor":  "#e45d5d"
+    },
+    {
+        "id":  248818,
+        "name":  {
+                     "full":  "Hiromi Higuruma",
+                     "native":  "日車寛見"
+                 },
+        "image":  {
+                      "local":  "hiromi-higuruma-248818.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b248818-G9R6TqqElpvG.png",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b248818-G9R6TqqElpvG.png"
+                  },
+        "favourites":  1902,
+        "role":  "SUPPORTING",
+        "seriesId":  172463,
+        "seriesTitle":  "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen",
+        "seriesColor":  "#78aee4"
+    },
+    {
+        "id":  158154,
+        "name":  {
+                     "full":  "Shouko Ieiri",
+                     "native":  "家入硝子"
+                 },
+        "image":  {
+                      "local":  "shouko-ieiri-158154.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b158154-UCqbiULli62P.png",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b158154-UCqbiULli62P.png"
+                  },
+        "favourites":  1578,
+        "role":  "SUPPORTING",
+        "seriesId":  113415,
+        "seriesTitle":  "Jujutsu Kaisen",
+        "seriesColor":  "#e45d5d"
+    },
+    {
+        "id":  197584,
+        "name":  {
+                     "full":  "Kinji Hakari",
+                     "native":  "秤金次"
+                 },
+        "image":  {
+                      "local":  "kinji-hakari-197584.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b197584-fK7Jc6DLfx7e.jpg",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b197584-fK7Jc6DLfx7e.jpg"
+                  },
+        "favourites":  1465,
+        "role":  "SUPPORTING",
+        "seriesId":  172463,
+        "seriesTitle":  "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen",
+        "seriesColor":  "#78aee4"
+    },
+    {
+        "id":  157215,
+        "name":  {
+                     "full":  "Mei Mei",
+                     "native":  "冥冥"
+                 },
+        "image":  {
+                      "local":  "mei-mei-157215.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b157215-I3TQJu8nkDwD.jpg",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b157215-I3TQJu8nkDwD.jpg"
+                  },
+        "favourites":  1282,
+        "role":  "SUPPORTING",
+        "seriesId":  113415,
+        "seriesTitle":  "Jujutsu Kaisen",
+        "seriesColor":  "#e45d5d"
+    },
+    {
+        "id":  157214,
+        "name":  {
+                     "full":  "Junpei Yoshino",
+                     "native":  "吉野順平"
+                 },
+        "image":  {
+                      "local":  "junpei-yoshino-157214.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b157214-ROBNoXVEXRNy.jpg",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b157214-ROBNoXVEXRNy.jpg"
+                  },
+        "favourites":  1274,
+        "role":  "SUPPORTING",
+        "seriesId":  113415,
+        "seriesTitle":  "Jujutsu Kaisen",
+        "seriesColor":  "#e45d5d"
+    },
+    {
+        "id":  157864,
+        "name":  {
+                     "full":  "Utahime Iori",
+                     "native":  "庵歌姫"
+                 },
+        "image":  {
+                      "local":  "utahime-iori-157864.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b157864-rejVYNx0kQZr.jpg",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b157864-rejVYNx0kQZr.jpg"
+                  },
+        "favourites":  1100,
+        "role":  "SUPPORTING",
+        "seriesId":  113415,
+        "seriesTitle":  "Jujutsu Kaisen",
+        "seriesColor":  "#e45d5d"
+    },
+    {
+        "id":  196502,
+        "name":  {
+                     "full":  "Yuki Tsukumo",
+                     "native":  "九十九由基"
+                 },
+        "image":  {
+                      "local":  "yuki-tsukumo-196502.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b196502-aBvtPFr9lGm2.png",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b196502-aBvtPFr9lGm2.png"
+                  },
+        "favourites":  1003,
+        "role":  "SUPPORTING",
+        "seriesId":  113415,
+        "seriesTitle":  "Jujutsu Kaisen",
+        "seriesColor":  "#e45d5d"
+    },
+    {
+        "id":  134168,
+        "name":  {
+                     "full":  "Mai Zenin",
+                     "native":  "禪院真依"
+                 },
+        "image":  {
+                      "local":  "mai-zenin-134168.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b134168-FdWz5w2LqpeF.jpg",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b134168-FdWz5w2LqpeF.jpg"
+                  },
+        "favourites":  978,
+        "role":  "SUPPORTING",
+        "seriesId":  113415,
+        "seriesTitle":  "Jujutsu Kaisen",
+        "seriesColor":  "#e45d5d"
+    },
+    {
+        "id":  243828,
+        "name":  {
+                     "full":  "Kirara Hoshi",
+                     "native":  "星キララ"
+                 },
+        "image":  {
+                      "local":  "kirara-hoshi-243828.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b243828-YGzd637cKhDp.png",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b243828-YGzd637cKhDp.png"
+                  },
+        "favourites":  662,
+        "role":  "SUPPORTING",
+        "seriesId":  172463,
+        "seriesTitle":  "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen",
+        "seriesColor":  "#78aee4"
+    },
+    {
+        "id":  210154,
+        "name":  {
+                     "full":  "Koukichi Muta",
+                     "native":  "与幸吉"
+                 },
+        "image":  {
+                      "local":  "koukichi-muta-210154.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b210154-nIn9DX39GFKP.jpg",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b210154-nIn9DX39GFKP.jpg"
+                  },
+        "favourites":  480,
+        "role":  "SUPPORTING",
+        "seriesId":  113415,
+        "seriesTitle":  "Jujutsu Kaisen",
+        "seriesColor":  "#e45d5d"
+    },
+    {
+        "id":  248143,
+        "name":  {
+                     "full":  "Hajime Kashimo",
+                     "native":  "鹿紫雲一"
+                 },
+        "image":  {
+                      "local":  "hajime-kashimo-248143.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b248143-w5ZilMdkvpbe.jpg",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b248143-w5ZilMdkvpbe.jpg"
+                  },
+        "favourites":  423,
+        "role":  "SUPPORTING",
+        "seriesId":  172463,
+        "seriesTitle":  "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen",
+        "seriesColor":  "#78aee4"
+    },
+    {
+        "id":  280467,
+        "name":  {
+                     "full":  "Fumihiko Takaba",
+                     "native":  "髙羽史彦"
+                 },
+        "image":  {
+                      "local":  "fumihiko-takaba-280467.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b280467-w8N3PAfEJmnc.png",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b280467-w8N3PAfEJmnc.png"
+                  },
+        "favourites":  420,
+        "role":  "SUPPORTING",
+        "seriesId":  172463,
+        "seriesTitle":  "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen",
+        "seriesColor":  "#78aee4"
+    },
+    {
+        "id":  208204,
+        "name":  {
+                     "full":  "Naoya Zenin",
+                     "native":  "禪院直哉"
+                 },
+        "image":  {
+                      "local":  "naoya-zenin-208204.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b208204-1CoWbBOC2Jqr.jpg",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b208204-1CoWbBOC2Jqr.jpg"
+                  },
+        "favourites":  407,
+        "role":  "SUPPORTING",
+        "seriesId":  172463,
+        "seriesTitle":  "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen",
+        "seriesColor":  "#78aee4"
+    },
+    {
+        "id":  156991,
+        "name":  {
+                     "full":  "Jougo",
+                     "native":  "漏瑚"
+                 },
+        "image":  {
+                      "local":  "jougo-156991.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b156991-niYjdp9CxO4w.png",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b156991-niYjdp9CxO4w.png"
+                  },
+        "favourites":  370,
+        "role":  "SUPPORTING",
+        "seriesId":  113415,
+        "seriesTitle":  "Jujutsu Kaisen",
+        "seriesColor":  "#e45d5d"
+    },
+    {
+        "id":  289584,
+        "name":  {
+                     "full":  "Kenjaku",
+                     "native":  "羂索"
+                 },
+        "image":  {
+                      "local":  "kenjaku-289584.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b289584-KndGudJZm5Ik.jpg",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b289584-KndGudJZm5Ik.jpg"
+                  },
+        "favourites":  361,
+        "role":  "SUPPORTING",
+        "seriesId":  145064,
+        "seriesTitle":  "Jujutsu Kaisen 2nd Season",
+        "seriesColor":  "#a178d6"
+    },
+    {
+        "id":  203015,
+        "name":  {
+                     "full":  "Riko Amanai",
+                     "native":  "天内理子"
+                 },
+        "image":  {
+                      "local":  "riko-amanai-203015.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b203015-ez2Io1gxIQOP.jpg",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b203015-ez2Io1gxIQOP.jpg"
+                  },
+        "favourites":  352,
+        "role":  "SUPPORTING",
+        "seriesId":  145064,
+        "seriesTitle":  "Jujutsu Kaisen 2nd Season",
+        "seriesColor":  "#a178d6"
+    },
+    {
+        "id":  208533,
+        "name":  {
+                     "full":  "Rika Orimoto",
+                     "native":  "祈本里香"
+                 },
+        "image":  {
+                      "local":  "rika-orimoto-208533.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b208533-EXiA1hR5l585.jpg",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b208533-EXiA1hR5l585.jpg"
+                  },
+        "favourites":  307,
+        "role":  "SUPPORTING",
+        "seriesId":  131573,
+        "seriesTitle":  "Jujutsu Kaisen 0",
+        "seriesColor":  "#f1c95d"
+    },
+    {
+        "id":  157865,
+        "name":  {
+                     "full":  "Takuma Ino",
+                     "native":  "猪野琢真"
+                 },
+        "image":  {
+                      "local":  "takuma-ino-157865.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b157865-X9ENX9OzWevS.jpg",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b157865-X9ENX9OzWevS.jpg"
+                  },
+        "favourites":  290,
+        "role":  "SUPPORTING",
+        "seriesId":  113415,
+        "seriesTitle":  "Jujutsu Kaisen",
+        "seriesColor":  "#e45d5d"
+    },
+    {
+        "id":  157866,
+        "name":  {
+                     "full":  "Noritoshi  Kamo",
+                     "native":  "加茂憲紀"
+                 },
+        "image":  {
+                      "local":  "noritoshi-kamo-157866.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b157866-UWDtYBoG71PD.png",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b157866-UWDtYBoG71PD.png"
+                  },
+        "favourites":  266,
+        "role":  "SUPPORTING",
+        "seriesId":  113415,
+        "seriesTitle":  "Jujutsu Kaisen",
+        "seriesColor":  "#e45d5d"
+    },
+    {
+        "id":  172743,
+        "name":  {
+                     "full":  "Hanami",
+                     "native":  "花御 "
+                 },
+        "image":  {
+                      "local":  "hanami-172743.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b172743-4Y5SXqED6A3G.jpg",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b172743-4Y5SXqED6A3G.jpg"
+                  },
+        "favourites":  211,
+        "role":  "SUPPORTING",
+        "seriesId":  113415,
+        "seriesTitle":  "Jujutsu Kaisen",
+        "seriesColor":  "#e45d5d"
+    },
+    {
+        "id":  157868,
+        "name":  {
+                     "full":  "Momo Nishimiya",
+                     "native":  "西宮桃"
+                 },
+        "image":  {
+                      "local":  "momo-nishimiya-157868.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b157868-Ui2Wht3M6tlM.png",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b157868-Ui2Wht3M6tlM.png"
+                  },
+        "favourites":  199,
+        "role":  "SUPPORTING",
+        "seriesId":  131573,
+        "seriesTitle":  "Jujutsu Kaisen 0",
+        "seriesColor":  "#f1c95d"
+    },
+    {
+        "id":  189238,
+        "name":  {
+                     "full":  "Kiyotaka Ijichi",
+                     "native":  "伊地知潔高"
+                 },
+        "image":  {
+                      "local":  "kiyotaka-ijichi-189238.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b189238-ItSLams6lRk9.png",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b189238-ItSLams6lRk9.png"
+                  },
+        "favourites":  195,
+        "role":  "SUPPORTING",
+        "seriesId":  131573,
+        "seriesTitle":  "Jujutsu Kaisen 0",
+        "seriesColor":  "#f1c95d"
+    },
+    {
+        "id":  205234,
+        "name":  {
+                     "full":  "Atsuya Kusakabe",
+                     "native":  "日下部篤也"
+                 },
+        "image":  {
+                      "local":  "atsuya-kusakabe-205234.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b205234-nrush17kFWaE.jpg",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b205234-nrush17kFWaE.jpg"
+                  },
+        "favourites":  193,
+        "role":  "SUPPORTING",
+        "seriesId":  131573,
+        "seriesTitle":  "Jujutsu Kaisen 0",
+        "seriesColor":  "#f1c95d"
+    },
+    {
+        "id":  280468,
+        "name":  {
+                     "full":  "Ryu Ishigori",
+                     "native":  "石流龍"
+                 },
+        "image":  {
+                      "local":  "ryu-ishigori-280468.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b280468-FKEIVFFwPmJ7.png",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b280468-FKEIVFFwPmJ7.png"
+                  },
+        "favourites":  187,
+        "role":  "SUPPORTING",
+        "seriesId":  172463,
+        "seriesTitle":  "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen",
+        "seriesColor":  "#78aee4"
+    },
+    {
+        "id":  189237,
+        "name":  {
+                     "full":  "Masamichi Yaga",
+                     "native":  "夜蛾正道"
+                 },
+        "image":  {
+                      "local":  "masamichi-yaga-189237.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b189237-ZxNJwVPL8DvW.png",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b189237-ZxNJwVPL8DvW.png"
+                  },
+        "favourites":  186,
+        "role":  "SUPPORTING",
+        "seriesId":  131573,
+        "seriesTitle":  "Jujutsu Kaisen 0",
+        "seriesColor":  "#f1c95d"
+    },
+    {
+        "id":  210846,
+        "name":  {
+                     "full":  "Akari Nitta",
+                     "native":  "新田明"
+                 },
+        "image":  {
+                      "local":  "akari-nitta-210846.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b210846-XcRQ643Ne8Pb.png",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b210846-XcRQ643Ne8Pb.png"
+                  },
+        "favourites":  156,
+        "role":  "SUPPORTING",
+        "seriesId":  131573,
+        "seriesTitle":  "Jujutsu Kaisen 0",
+        "seriesColor":  "#f1c95d"
+    },
+    {
+        "id":  193479,
+        "name":  {
+                     "full":  "Tsumiki Fushiguro",
+                     "native":  "伏黒津美紀"
+                 },
+        "image":  {
+                      "local":  "tsumiki-fushiguro-193479.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b193479-aGNRmbU5jNwR.png",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b193479-aGNRmbU5jNwR.png"
+                  },
+        "favourites":  137,
+        "role":  "SUPPORTING",
+        "seriesId":  192809,
+        "seriesTitle":  "Jujutsu Kaisen: Kaigyoku・Gyokusetsu",
+        "seriesColor":  "#43a1f1"
+    },
+    {
+        "id":  283136,
+        "name":  {
+                     "full":  "Takako Uro",
+                     "native":  "鳥鷺亨子"
+                 },
+        "image":  {
+                      "local":  "takako-uro-283136.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b283136-NvWh6wRYmFnn.jpg",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b283136-NvWh6wRYmFnn.jpg"
+                  },
+        "favourites":  115,
+        "role":  "SUPPORTING",
+        "seriesId":  172463,
+        "seriesTitle":  "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen",
+        "seriesColor":  "#78aee4"
+    },
+    {
+        "id":  281725,
+        "name":  {
+                     "full":  "Yuu Haibara",
+                     "native":  "灰原雄"
+                 },
+        "image":  {
+                      "local":  "yuu-haibara-281725.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b281725-qJOgelbFp32B.jpg",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b281725-qJOgelbFp32B.jpg"
+                  },
+        "favourites":  59,
+        "role":  "SUPPORTING",
+        "seriesId":  192809,
+        "seriesTitle":  "Jujutsu Kaisen: Kaigyoku・Gyokusetsu",
+        "seriesColor":  "#43a1f1"
+    },
+    {
+        "id":  272175,
+        "name":  {
+                     "full":  "Miguel",
+                     "native":  "ミゲル"
+                 },
+        "image":  {
+                      "local":  "miguel-272175.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b272175-wBjreG7iB9n2.png",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b272175-wBjreG7iB9n2.png"
+                  },
+        "favourites":  49,
+        "role":  "SUPPORTING",
+        "seriesId":  131573,
+        "seriesTitle":  "Jujutsu Kaisen 0",
+        "seriesColor":  "#f1c95d"
+    },
+    {
+        "id":  303313,
+        "name":  {
+                     "full":  "Shiu Kong",
+                     "native":  "孔時雨"
+                 },
+        "image":  {
+                      "local":  "shiu-kong-303313.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b303313-5ELI3hDVjNwP.jpg",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b303313-5ELI3hDVjNwP.jpg"
+                  },
+        "favourites":  47,
+        "role":  "SUPPORTING",
+        "seriesId":  192809,
+        "seriesTitle":  "Jujutsu Kaisen: Kaigyoku・Gyokusetsu",
+        "seriesColor":  "#43a1f1"
+    },
+    {
+        "id":  311131,
+        "name":  {
+                     "full":  "Kakunou Jurei",
+                     "native":  "格納呪霊"
+                 },
+        "image":  {
+                      "local":  "kakunou-jurei-311131.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b311131-OS4dUGlxR6OH.png",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b311131-OS4dUGlxR6OH.png"
+                  },
+        "favourites":  45,
+        "role":  "SUPPORTING",
+        "seriesId":  192809,
+        "seriesTitle":  "Jujutsu Kaisen: Kaigyoku・Gyokusetsu",
+        "seriesColor":  "#43a1f1"
+    },
+    {
+        "id":  255175,
+        "name":  {
+                     "full":  "Misato Kuroi",
+                     "native":  "黒井美里"
+                 },
+        "image":  {
+                      "local":  "misato-kuroi-255175.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b255175-rOyuWgBm6W9M.jpg",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b255175-rOyuWgBm6W9M.jpg"
+                  },
+        "favourites":  38,
+        "role":  "SUPPORTING",
+        "seriesId":  192809,
+        "seriesTitle":  "Jujutsu Kaisen: Kaigyoku・Gyokusetsu",
+        "seriesColor":  "#43a1f1"
+    },
+    {
+        "id":  228986,
+        "name":  {
+                     "full":  "Mimiko Hasaba",
+                     "native":  "枷場美々子"
+                 },
+        "image":  {
+                      "local":  "mimiko-hasaba-228986.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b228986-TXJuABOhrxRA.jpg",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b228986-TXJuABOhrxRA.jpg"
+                  },
+        "favourites":  33,
+        "role":  "SUPPORTING",
+        "seriesId":  131573,
+        "seriesTitle":  "Jujutsu Kaisen 0",
+        "seriesColor":  "#f1c95d"
+    },
+    {
+        "id":  228987,
+        "name":  {
+                     "full":  "Nanako Hasaba",
+                     "native":  "枷場菜々子"
+                 },
+        "image":  {
+                      "local":  "nanako-hasaba-228987.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b228987-Su63YTP33b6W.jpg",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b228987-Su63YTP33b6W.jpg"
+                  },
+        "favourites":  29,
+        "role":  "SUPPORTING",
+        "seriesId":  131573,
+        "seriesTitle":  "Jujutsu Kaisen 0",
+        "seriesColor":  "#f1c95d"
+    },
+    {
+        "id":  306254,
+        "name":  {
+                     "full":  "Manami Suda",
+                     "native":  "菅田真奈美"
+                 },
+        "image":  {
+                      "local":  "manami-suda-306254.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b306254-rcw8cnkJlTak.png",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b306254-rcw8cnkJlTak.png"
+                  },
+        "favourites":  14,
+        "role":  "SUPPORTING",
+        "seriesId":  131573,
+        "seriesTitle":  "Jujutsu Kaisen 0",
+        "seriesColor":  "#f1c95d"
+    },
+    {
+        "id":  306192,
+        "name":  {
+                     "full":  "Kuchisake-Onna",
+                     "native":  "口裂け女"
+                 },
+        "image":  {
+                      "local":  "kuchisake-onna-306192.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b306192-Xo6IC6JP7LwG.png",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b306192-Xo6IC6JP7LwG.png"
+                  },
+        "favourites":  5,
+        "role":  "SUPPORTING",
+        "seriesId":  192809,
+        "seriesTitle":  "Jujutsu Kaisen: Kaigyoku・Gyokusetsu",
+        "seriesColor":  "#43a1f1"
+    },
+    {
+        "id":  310091,
+        "name":  {
+                     "full":  "Kamibukuro Jusoshi",
+                     "native":  "紙袋呪詛師"
+                 },
+        "image":  {
+                      "local":  "kamibukuro-jusoshi-310091.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b310091-M3rC4FXthPtm.jpg",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b310091-M3rC4FXthPtm.jpg"
+                  },
+        "favourites":  4,
+        "role":  "SUPPORTING",
+        "seriesId":  192809,
+        "seriesTitle":  "Jujutsu Kaisen: Kaigyoku・Gyokusetsu",
+        "seriesColor":  "#43a1f1"
+    },
+    {
+        "id":  310096,
+        "name":  {
+                     "full":  "Kyouteiba Announcer",
+                     "native":  "競艇場アナウンス"
+                 },
+        "image":  {
+                      "local":  "kyouteiba-announcer-310096.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b310096-tvpojanATUT7.png",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b310096-tvpojanATUT7.png"
+                  },
+        "favourites":  3,
+        "role":  "SUPPORTING",
+        "seriesId":  192809,
+        "seriesTitle":  "Jujutsu Kaisen: Kaigyoku・Gyokusetsu",
+        "seriesColor":  "#43a1f1"
+    },
+    {
+        "id":  306268,
+        "name":  {
+                     "full":  "Koukun",
+                     "native":  "コークン"
+                 },
+        "image":  {
+                      "local":  "koukun-306268.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b306268-49iFgcDudSAC.jpg",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b306268-49iFgcDudSAC.jpg"
+                  },
+        "favourites":  3,
+        "role":  "SUPPORTING",
+        "seriesId":  192809,
+        "seriesTitle":  "Jujutsu Kaisen: Kaigyoku・Gyokusetsu",
+        "seriesColor":  "#43a1f1"
+    },
+    {
+        "id":  306267,
+        "name":  {
+                     "full":  "Bayer",
+                     "native":  "バイエル"
+                 },
+        "image":  {
+                      "local":  "bayer-306267.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b306267-7QXgLLV4bMVB.jpg",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b306267-7QXgLLV4bMVB.jpg"
+                  },
+        "favourites":  3,
+        "role":  "SUPPORTING",
+        "seriesId":  192809,
+        "seriesTitle":  "Jujutsu Kaisen: Kaigyoku・Gyokusetsu",
+        "seriesColor":  "#43a1f1"
+    },
+    {
+        "id":  310095,
+        "name":  {
+                     "full":  "Kyoushi",
+                     "native":  "教師"
+                 },
+        "image":  {
+                      "local":  "kyoushi-310095.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b310095-1eFH14WWCMGm.jpg",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b310095-1eFH14WWCMGm.jpg"
+                  },
+        "favourites":  3,
+        "role":  "SUPPORTING",
+        "seriesId":  192809,
+        "seriesTitle":  "Jujutsu Kaisen: Kaigyoku・Gyokusetsu",
+        "seriesColor":  "#43a1f1"
+    },
+    {
+        "id":  306269,
+        "name":  {
+                     "full":  "Shigeru Sonoda",
+                     "native":  "園田茂"
+                 },
+        "image":  {
+                      "local":  "shigeru-sonoda-306269.jpg",
+                      "large":  "https://s4.anilist.co/file/anilistcdn/character/large/b306269-fPh6fXzI2WZO.jpg",
+                      "medium":  "https://s4.anilist.co/file/anilistcdn/character/medium/b306269-fPh6fXzI2WZO.jpg"
+                  },
+        "favourites":  2,
+        "role":  "SUPPORTING",
+        "seriesId":  192809,
+        "seriesTitle":  "Jujutsu Kaisen: Kaigyoku・Gyokusetsu",
+        "seriesColor":  "#43a1f1"
+    }
+]

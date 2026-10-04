@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@import "./assets/theme.css";
+
+@font-face {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 400;
+    src: local(""),
+    url("assets/fonts/nunito-v16-latin-regular.woff2") format("woff2");
+}
+
+html, body {
+    margin: 0;
+    background-color: var(--color-surface-0);
+    color: var(--color-text-primary);
+    font-family: var(--font-sans);
+}
+
+#app {
+    min-height: 100vh;
+}
