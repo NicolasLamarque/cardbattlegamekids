@@ -4,18 +4,18 @@ import CardRenderer from '../components/card/CardRenderer.vue'
 import BaseButton from '../components/base/BaseButton.vue'
 import BaseAspectImage from '../components/base/BaseAspectImage.vue'
 import TeamSlotsColumn from '../components/draft/TeamSlotsColumn.vue'
-import { suggestedPrice } from '../game/draft.js'
 import { rollModifier } from '../game/draftModifiers.js'
 import { localCharacterImage } from '../data/images.js'
 import { appImage } from '../data/appImages.js'
-import { GetCharacters, GetDraftModifiers } from '../../wailsjs/go/main/App.js'
+import { GetCharacters, GetDraftModifiers, BroadcastGameState } from '../../wailsjs/go/main/App.js'
+import { EventsOn } from '../../wailsjs/runtime/runtime.js'
 
 const props = defineProps({
   config: { type: Object, required: true },
 })
 const emit = defineEmits(['done'])
 
-const BID_INCREMENT = 50000
+const BID_PRESETS = [10000, 20000, 50000]
 const POT_WIDTH = '160px'
 
 const pool = ref([])
@@ -30,6 +30,7 @@ const currentBid = ref(0)
 const currentBidder = ref(null)
 const customBidBlue = ref(0)
 const customBidRed = ref(0)
+const bidErrors = reactive({ blue: '', red: '' })
 const expandedTeam = ref(null)
 
 onMounted(async () => {
@@ -45,7 +46,56 @@ onMounted(async () => {
     accentColor: c.seriesColor,
   }))
   modifiersCatalog.value = props.config.modifiersEnabled ? await GetDraftModifiers() : []
+
+  if (props.config.connection === 'lan') {
+    broadcastDraftState()
+    EventsOn('guest:connected', () => broadcastDraftState())
+    EventsOn('guest:action', (payload) => {
+      const action = JSON.parse(payload)
+      if (action.type === 'bid') placeBid('red', action.amount)
+      else if (action.type === 'pass') pass('red')
+    })
+  }
 })
+
+// L'invité (équipe Rouge) voit le lot courant et peut miser depuis son
+// téléphone — le Bocal n'a pas d'information cachée entre équipes, donc on
+// lui envoie l'état tel quel, pas besoin de filtrer comme en Arène.
+function broadcastDraftState() {
+  if (props.config.connection !== 'lan') return
+  BroadcastGameState(
+    JSON.stringify({
+      type: 'draftState',
+      currentLot: currentLot.value
+        ? {
+            character: {
+              id: currentLot.value.character.id,
+              name: currentLot.value.character.name,
+              image: { large: currentLot.value.character.image.remote || currentLot.value.character.image.large },
+              favourites: currentLot.value.character.favourites,
+            },
+            stats: currentLot.value.stats,
+            accentColor: currentLot.value.accentColor,
+          }
+        : null,
+      currentModifier: currentModifier.value,
+      currentBid: currentBid.value,
+      currentBidder: currentBidder.value,
+      bidError: bidErrors.red,
+      red: {
+        budget: teams.red.budget,
+        slotsUsed: teams.red.slots.length,
+        slotsTotal: effectiveSlots('red'),
+      },
+      blue: {
+        budget: teams.blue.budget,
+        slotsUsed: teams.blue.slots.length,
+        slotsTotal: effectiveSlots('blue'),
+      },
+      draftDone: draftDone.value,
+    })
+  )
+}
 
 function customBidRefFor(teamId) {
   return teamId === 'blue' ? customBidBlue : customBidRed
@@ -63,18 +113,15 @@ function totalPV(teamId) {
   return teams[teamId].slots.reduce((sum, s) => sum + s.entry.stats.pv, 0)
 }
 
-function canBid(teamId) {
+function canBidAmount(teamId, amount) {
   const team = teams[teamId]
-  return team.budget >= BID_INCREMENT && team.slots.length < effectiveSlots(teamId)
+  return amount > 0 && team.budget >= amount && team.slots.length < effectiveSlots(teamId)
 }
 
-const cheapestPoolPrice = computed(() => {
-  if (!pool.value.length) return Infinity
-  return Math.min(...pool.value.map((e) => suggestedPrice(e.character)))
-})
-
+// Mise libre : aucun prix suggéré ni plancher — un personnage peut partir
+// pour 1 $ comme pour tout le budget d'une équipe, à leur discrétion.
 function canAffordAnything(teamId) {
-  return teams[teamId].budget >= cheapestPoolPrice.value
+  return teams[teamId].budget > 0 && teams[teamId].slots.length < effectiveSlots(teamId)
 }
 
 const notFull = computed(() => ['blue', 'red'].filter((id) => teams[id].slots.length < effectiveSlots(id)))
@@ -96,29 +143,50 @@ function drawCard() {
   pool.value = pool.value.filter((_, i) => i !== idx)
   currentBid.value = 0
   currentBidder.value = null
+  bidErrors.blue = ''
+  bidErrors.red = ''
   currentModifier.value = props.config.modifiersEnabled
     ? rollModifier(modifiersCatalog.value, props.config.modifiersIntensity)
     : null
+  broadcastDraftState()
 }
 
 function skipCard() {
   pool.value.push(currentLot.value)
   currentLot.value = null
   currentModifier.value = null
+  broadcastDraftState()
 }
 
-function raise(teamId) {
-  const nextBid = currentBid.value + BID_INCREMENT
-  if (nextBid > teams[teamId].budget) return
-  currentBid.value = nextBid
+// Mise libre : n'importe quel montant au-dessus de la mise actuelle et dans
+// le budget de l'équipe — préréglages (+10K/+20K/+50K) ou montant au choix,
+// même règle des deux côtés.
+function placeBid(teamId, amount) {
+  bidErrors[teamId] = ''
+  const n = Math.round(Number(amount))
+  if (!n || n <= 0) {
+    bidErrors[teamId] = 'Montant invalide.'
+    return
+  }
+  if (n <= currentBid.value) {
+    bidErrors[teamId] = `Doit dépasser la mise actuelle (${currentBid.value.toLocaleString()} $).`
+    return
+  }
+  if (n > teams[teamId].budget) {
+    bidErrors[teamId] = 'Dépasse le budget restant.'
+    return
+  }
+  currentBid.value = n
   currentBidder.value = teamId
+  broadcastDraftState()
+}
+
+function raisePreset(teamId, preset) {
+  placeBid(teamId, currentBid.value + preset)
 }
 
 function raiseCustom(teamId) {
-  const amount = Number(customBidRefFor(teamId).value)
-  if (!amount || amount <= currentBid.value || amount > teams[teamId].budget) return
-  currentBid.value = amount
-  currentBidder.value = teamId
+  placeBid(teamId, customBidRefFor(teamId).value)
   customBidRefFor(teamId).value = 0
 }
 
@@ -145,6 +213,7 @@ function finalizeLot(winnerId, price) {
   currentBid.value = 0
   currentBidder.value = null
   currentModifier.value = null
+  broadcastDraftState()
 }
 
 function fillRandomly(teamId) {
@@ -154,6 +223,7 @@ function fillRandomly(teamId) {
     pool.value.splice(idx, 1)
     teams[teamId].slots.push({ entry, price: 0, modifier: null })
   }
+  broadcastDraftState()
 }
 
 function finishDraft() {
@@ -262,9 +332,6 @@ function finishDraft() {
                 >
                   {{ currentModifier.type === 'bonus' ? '✦' : '⚠' }} {{ currentModifier.label }}
                 </span>
-                <p class="text-sm text-text-secondary">
-                  Valeur suggérée : {{ suggestedPrice(currentLot.character).toLocaleString() }} $
-                </p>
               </div>
             </Transition>
           </div>
@@ -279,45 +346,62 @@ function finishDraft() {
           <span v-if="currentBidder" class="text-text-secondary text-sm">({{ teams[currentBidder].name }})</span>
         </p>
 
-        <div class="flex gap-3">
-          <BaseButton v-if="currentBidder !== 'blue'" :disabled="!canBid('blue')" @click="raise('blue')">
-            Bleue mise +{{ BID_INCREMENT.toLocaleString() }} $
-          </BaseButton>
-          <BaseButton v-if="currentBidder === 'blue'" variant="secondary" @click="pass('red')">Rouge passe</BaseButton>
-          <BaseButton v-if="currentBidder !== 'red'" :disabled="!canBid('red')" @click="raise('red')">
-            Rouge mise +{{ BID_INCREMENT.toLocaleString() }} $
-          </BaseButton>
-          <BaseButton v-if="currentBidder === 'red'" variant="secondary" @click="pass('blue')">Bleue passe</BaseButton>
-        </div>
-
-        <BaseButton v-if="!currentBidder" variant="ghost" @click="skipCard">Personne ne mise — remettre dans le pot</BaseButton>
-
-        <div class="flex gap-3">
-          <div v-if="currentBidder !== 'blue'" class="flex gap-1 items-center">
+        <div v-if="currentBidder !== 'blue'" class="flex flex-col items-center gap-1">
+          <div class="flex gap-2">
+            <BaseButton
+              v-for="preset in BID_PRESETS"
+              :key="'blue-' + preset"
+              :disabled="!canBidAmount('blue', currentBid + preset)"
+              @click="raisePreset('blue', preset)"
+            >
+              Bleue +{{ preset.toLocaleString() }} $
+            </BaseButton>
+          </div>
+          <div class="flex gap-1 items-center">
             <input
               v-model.number="customBidBlue"
               type="number"
               :min="currentBid + 1"
               :max="teams.blue.budget"
-              step="10000"
-              placeholder="Montant bleu"
-              class="w-32 border border-border rounded-card px-2 py-1 text-sm bg-surface-2 text-text-primary"
+              placeholder="Montant bleu au choix"
+              class="w-40 border border-border rounded-card px-2 py-1 text-sm bg-surface-2 text-text-primary"
             />
             <BaseButton variant="secondary" @click="raiseCustom('blue')">Miser ce montant</BaseButton>
           </div>
-          <div v-if="currentBidder !== 'red'" class="flex gap-1 items-center">
-            <input
-              v-model.number="customBidRed"
-              type="number"
-              :min="currentBid + 1"
-              :max="teams.red.budget"
-              step="10000"
-              placeholder="Montant rouge"
-              class="w-32 border border-border rounded-card px-2 py-1 text-sm bg-surface-2 text-text-primary"
-            />
-            <BaseButton variant="secondary" @click="raiseCustom('red')">Miser ce montant</BaseButton>
-          </div>
+          <p v-if="bidErrors.blue" class="text-xs text-force">{{ bidErrors.blue }}</p>
         </div>
+        <BaseButton v-if="currentBidder === 'blue'" variant="secondary" @click="pass('red')">Rouge passe</BaseButton>
+
+        <template v-if="config.connection !== 'lan'">
+          <div v-if="currentBidder !== 'red'" class="flex flex-col items-center gap-1">
+            <div class="flex gap-2">
+              <BaseButton
+                v-for="preset in BID_PRESETS"
+                :key="'red-' + preset"
+                :disabled="!canBidAmount('red', currentBid + preset)"
+                @click="raisePreset('red', preset)"
+              >
+                Rouge +{{ preset.toLocaleString() }} $
+              </BaseButton>
+            </div>
+            <div class="flex gap-1 items-center">
+              <input
+                v-model.number="customBidRed"
+                type="number"
+                :min="currentBid + 1"
+                :max="teams.red.budget"
+                placeholder="Montant rouge au choix"
+                class="w-40 border border-border rounded-card px-2 py-1 text-sm bg-surface-2 text-text-primary"
+              />
+              <BaseButton variant="secondary" @click="raiseCustom('red')">Miser ce montant</BaseButton>
+            </div>
+            <p v-if="bidErrors.red" class="text-xs text-force">{{ bidErrors.red }}</p>
+          </div>
+        </template>
+        <p v-else-if="currentBidder !== 'red'" class="text-sm text-text-muted">Équipe Rouge — mise depuis le téléphone de l'invité.</p>
+        <BaseButton v-if="currentBidder === 'red'" variant="secondary" @click="pass('blue')">Bleue passe</BaseButton>
+
+        <BaseButton v-if="!currentBidder" variant="ghost" @click="skipCard">Personne ne mise — remettre dans le pot</BaseButton>
       </div>
 
       <div v-else class="flex justify-center mb-6">
