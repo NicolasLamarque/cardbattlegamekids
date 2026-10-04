@@ -9,6 +9,7 @@ import CollectionView from './views/CollectionView.vue'
 import ArenaView from './views/ArenaView.vue'
 import StatsAdminView from './views/StatsAdminView.vue'
 import ModifiersAdminView from './views/ModifiersAdminView.vue'
+import AttacksAdminView from './views/AttacksAdminView.vue'
 import BaseBackButton from './components/base/BaseBackButton.vue'
 import BaseToast from './components/base/BaseToast.vue'
 import { specialCards, dealHands } from './game/specialCards.js'
@@ -117,8 +118,16 @@ function startGame() {
       >
         Malus / Bonus du Bocal
       </button>
+      <button
+        class="px-3 py-1.5 rounded-card text-sm font-medium"
+        :class="view === 'attacks' ? 'bg-accent text-white' : 'text-text-secondary hover:bg-surface-2'"
+        @click="view = 'attacks'"
+      >
+        Table des attaques
+      </button>
     </nav>
     <StatsAdminView v-if="view === 'stats'" />
+    <AttacksAdminView v-else-if="view === 'attacks'" />
     <ModifiersAdminView v-else />
   </div>
 
@@ -152,10 +161,18 @@ function startGame() {
       >
         Malus / Bonus
       </button>
+      <button
+        class="px-3 py-1.5 rounded-card text-sm font-medium"
+        :class="view === 'attacks' ? 'bg-accent text-white' : 'text-text-secondary hover:bg-surface-2'"
+        @click="view = 'attacks'"
+      >
+        Table des attaques
+      </button>
     </nav>
     <CollectionView v-if="view === 'collection'" />
     <StatsAdminView v-else-if="view === 'stats'" />
     <ModifiersAdminView v-else-if="view === 'modifiers'" />
+    <AttacksAdminView v-else-if="view === 'attacks'" />
     <ArenaView
       v-else
       :special-cards-enabled="gameConfig?.specialCardsEnabled ?? true"

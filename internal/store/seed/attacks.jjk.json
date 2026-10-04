@@ -1,0 +1,185 @@
+[
+  {
+    "characterId": 127691,
+    "attacks": [
+      { "name": "Hollow Blue (Attraction)", "color": "#3b82f6" },
+      { "name": "Hollow Red (Répulsion)", "color": "#ef4444" },
+      { "name": "Infini", "color": "#93c5fd" },
+      { "name": "Domaine Inconsidéré", "color": "#8b5cf6" },
+      { "name": "Hollow Purple", "color": "#a855f7" }
+    ]
+  },
+  {
+    "characterId": 127212,
+    "attacks": [
+      { "name": "Coup rapide", "color": "#fb923c" },
+      { "name": "Frappe Divergente", "color": "#f97316" },
+      { "name": "Black Flash", "color": "#1f2937" }
+    ]
+  },
+  {
+    "characterId": 126635,
+    "attacks": [
+      { "name": "Chiens Divins (Avant)", "color": "#4b5563" },
+      { "name": "Chiens Divins (Arrière)", "color": "#374151" },
+      { "name": "Nue", "color": "#6b7280" },
+      { "name": "Max Elephant", "color": "#1f2937" },
+      { "name": "Mahoraga", "color": "#7c3aed" }
+    ]
+  },
+  {
+    "characterId": 133700,
+    "attacks": [
+      { "name": "Clou simple", "color": "#f472b6" },
+      { "name": "Résonance", "color": "#ec4899" },
+      { "name": "Hairpin (Explosion)", "color": "#db2777" }
+    ]
+  },
+  {
+    "characterId": 133704,
+    "attacks": [
+      { "name": "Frappe directe", "color": "#475569" },
+      { "name": "Ratio 7:3", "color": "#0ea5e9" },
+      { "name": "Heures supplémentaires", "color": "#0369a1" }
+    ]
+  },
+  {
+    "characterId": 134167,
+    "attacks": [
+      { "name": "Combat à mains nues", "color": "#16a34a" },
+      { "name": "Épée héritée", "color": "#22c55e" },
+      { "name": "Playful Cloud", "color": "#4ade80" }
+    ]
+  },
+  {
+    "characterId": 133701,
+    "attacks": [
+      { "name": "Démembrement", "color": "#dc2626" },
+      { "name": "Flèche de Feu", "color": "#ea580c" },
+      { "name": "Agito", "color": "#b91c1c" },
+      { "name": "Domaine Malléable", "color": "#991b1b" },
+      { "name": "Prison Incinérante", "color": "#7f1d1d" }
+    ]
+  },
+  {
+    "characterId": 129571,
+    "attacks": [
+      { "name": "Épée maudite", "color": "#60a5fa" },
+      { "name": "Rika, Reine des Malédictions", "color": "#f43f5e" },
+      { "name": "Copie de technique", "color": "#38bdf8" }
+    ]
+  },
+  {
+    "characterId": 157115,
+    "attacks": [
+      { "name": "Tais-toi", "color": "#14b8a6" },
+      { "name": "Tombe", "color": "#0d9488" },
+      { "name": "Explose", "color": "#f59e0b" },
+      { "name": "Meurs", "color": "#0f766e" }
+    ]
+  },
+  {
+    "characterId": 133699,
+    "attacks": [
+      { "name": "Transfert de Malédiction", "color": "#6366f1" },
+      { "name": "Invocation Double-Face", "color": "#4f46e5" },
+      { "name": "Maximum : Uzumaki", "color": "#4338ca" }
+    ]
+  },
+  {
+    "characterId": 162722,
+    "attacks": [
+      { "name": "Lame cachée", "color": "#52525b" },
+      { "name": "Playful Cloud", "color": "#71717a" },
+      { "name": "Instinct de combat pur", "color": "#3f3f46" }
+    ]
+  },
+  {
+    "characterId": 137975,
+    "attacks": [
+      { "name": "Frappe surpuissante", "color": "#facc15" },
+      { "name": "Boogie Woogie", "color": "#fbbf24" },
+      { "name": "Combo échangé", "color": "#f59e0b" }
+    ]
+  },
+  {
+    "characterId": 157116,
+    "attacks": [
+      { "name": "Manipulation du sang", "color": "#991b1b" },
+      { "name": "Lame de sang", "color": "#b91c1c" },
+      { "name": "Invocation : Frères Dragon", "color": "#7f1d1d" }
+    ]
+  },
+  {
+    "characterId": 133702,
+    "attacks": [
+      { "name": "Toucher maudit", "color": "#f9a8d4" },
+      { "name": "Métamorphose Idiopathique", "color": "#f472b6" },
+      { "name": "Âme remodelée", "color": "#ec4899" }
+    ]
+  },
+  {
+    "characterId": 137974,
+    "attacks": [
+      { "name": "Mode Panda", "color": "#78350f" },
+      { "name": "Mode Gorille", "color": "#92400e" },
+      { "name": "Mode Double Noyau", "color": "#b45309" }
+    ]
+  },
+  {
+    "characterId": 248818,
+    "attacks": [
+      { "name": "Objection", "color": "#1e3a8a" },
+      { "name": "Verdict de Jugement Humain", "color": "#1e40af" },
+      { "name": "Peine capitale", "color": "#1d4ed8" }
+    ]
+  },
+  {
+    "characterId": 196502,
+    "attacks": [
+      { "name": "Poussée gravitationnelle", "color": "#22d3ee" },
+      { "name": "Rage Stellaire", "color": "#06b6d4" },
+      { "name": "Manipulation de la gravité", "color": "#0891b2" }
+    ]
+  },
+  {
+    "characterId": 197584,
+    "attacks": [
+      { "name": "Pari risqué", "color": "#eab308" },
+      { "name": "Idle Death Gamble", "color": "#ca8a04" },
+      { "name": "Jackpot maudit", "color": "#a16207" }
+    ]
+  },
+  {
+    "characterId": 248143,
+    "attacks": [
+      { "name": "Décharge électrique", "color": "#fde047" },
+      { "name": "Foudre maudite", "color": "#facc15" },
+      { "name": "Fulgurance", "color": "#38bdf8" }
+    ]
+  },
+  {
+    "characterId": 208204,
+    "attacks": [
+      { "name": "Déplacement sanglant", "color": "#be123c" },
+      { "name": "Frappe éclair", "color": "#e11d48" },
+      { "name": "Combo instantané", "color": "#9f1239" }
+    ]
+  },
+  {
+    "characterId": 156991,
+    "attacks": [
+      { "name": "Boule de feu", "color": "#f97316" },
+      { "name": "Éruption maudite", "color": "#ea580c" },
+      { "name": "Volcan", "color": "#c2410c" }
+    ]
+  },
+  {
+    "characterId": 289584,
+    "attacks": [
+      { "name": "Manipulation en coulisses", "color": "#4d7c0f" },
+      { "name": "Transfert de cerveau", "color": "#3f6212" },
+      { "name": "Malédiction ancienne", "color": "#365314" }
+    ]
+  }
+]

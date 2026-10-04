@@ -1,5 +1,29 @@
 export namespace store {
 	
+	export class Attack {
+	    id: number;
+	    characterId: number;
+	    name: string;
+	    color: string;
+	    forceBonus: number;
+	    manaCost: number;
+	    sortOrder: number;
+	
+	    static createFrom(source: any = {}) {
+	        return new Attack(source);
+	    }
+	
+	    constructor(source: any = {}) {
+	        if ('string' === typeof source) source = JSON.parse(source);
+	        this.id = source["id"];
+	        this.characterId = source["characterId"];
+	        this.name = source["name"];
+	        this.color = source["color"];
+	        this.forceBonus = source["forceBonus"];
+	        this.manaCost = source["manaCost"];
+	        this.sortOrder = source["sortOrder"];
+	    }
+	}
 	export class Character {
 	    id: number;
 	    nameFull: string;
@@ -16,6 +40,10 @@ export namespace store {
 	    pv: number;
 	    isCustomStats: boolean;
 	    customData: string;
+	    maxMana: number;
+	    manaRegen: number;
+	    maxAttacksOverride?: number;
+	    maxAttacks: number;
 	
 	    static createFrom(source: any = {}) {
 	        return new Character(source);
@@ -38,6 +66,10 @@ export namespace store {
 	        this.pv = source["pv"];
 	        this.isCustomStats = source["isCustomStats"];
 	        this.customData = source["customData"];
+	        this.maxMana = source["maxMana"];
+	        this.manaRegen = source["manaRegen"];
+	        this.maxAttacksOverride = source["maxAttacksOverride"];
+	        this.maxAttacks = source["maxAttacks"];
 	    }
 	}
 	export class DraftModifier {

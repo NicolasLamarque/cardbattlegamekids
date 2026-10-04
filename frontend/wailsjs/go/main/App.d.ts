@@ -6,7 +6,11 @@ export function BroadcastGameState(arg1:string):Promise<void>;
 
 export function CreatePlayer(arg1:string):Promise<store.Player>;
 
+export function DeleteCharacterAttack(arg1:number):Promise<void>;
+
 export function DeleteDraftModifier(arg1:string):Promise<void>;
+
+export function GetCharacterAttacks():Promise<Array<store.Attack>>;
 
 export function GetCharacters():Promise<Array<store.Character>>;
 
@@ -14,12 +18,18 @@ export function GetDraftModifiers():Promise<Array<store.DraftModifier>>;
 
 export function ListPlayers():Promise<Array<store.Player>>;
 
+export function ResetCharacterAttacks(arg1:number):Promise<void>;
+
 export function ResetCharacterStats(arg1:number):Promise<void>;
+
+export function SaveCharacterAttack(arg1:store.Attack):Promise<store.Attack>;
 
 export function SaveDraftModifier(arg1:store.DraftModifier):Promise<void>;
 
 export function StartLanServer():Promise<Record<string, string>>;
 
 export function StopLanServer():Promise<void>;
+
+export function UpdateCharacterManaSettings(arg1:number,arg2:number,arg3:number):Promise<void>;
 
 export function UpdateCharacterStats(arg1:number,arg2:number,arg3:number):Promise<void>;

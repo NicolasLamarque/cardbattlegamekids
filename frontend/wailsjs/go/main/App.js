@@ -10,8 +10,16 @@ export function CreatePlayer(arg1) {
   return window['go']['main']['App']['CreatePlayer'](arg1);
 }
 
+export function DeleteCharacterAttack(arg1) {
+  return window['go']['main']['App']['DeleteCharacterAttack'](arg1);
+}
+
 export function DeleteDraftModifier(arg1) {
   return window['go']['main']['App']['DeleteDraftModifier'](arg1);
+}
+
+export function GetCharacterAttacks() {
+  return window['go']['main']['App']['GetCharacterAttacks']();
 }
 
 export function GetCharacters() {
@@ -26,8 +34,16 @@ export function ListPlayers() {
   return window['go']['main']['App']['ListPlayers']();
 }
 
+export function ResetCharacterAttacks(arg1) {
+  return window['go']['main']['App']['ResetCharacterAttacks'](arg1);
+}
+
 export function ResetCharacterStats(arg1) {
   return window['go']['main']['App']['ResetCharacterStats'](arg1);
+}
+
+export function SaveCharacterAttack(arg1) {
+  return window['go']['main']['App']['SaveCharacterAttack'](arg1);
 }
 
 export function SaveDraftModifier(arg1) {
@@ -40,6 +56,10 @@ export function StartLanServer() {
 
 export function StopLanServer() {
   return window['go']['main']['App']['StopLanServer']();
+}
+
+export function UpdateCharacterManaSettings(arg1, arg2, arg3) {
+  return window['go']['main']['App']['UpdateCharacterManaSettings'](arg1, arg2, arg3);
 }
 
 export function UpdateCharacterStats(arg1, arg2, arg3) {

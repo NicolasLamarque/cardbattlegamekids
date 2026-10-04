@@ -37,6 +37,9 @@ func (a *App) startup(ctx context.Context) {
 	if err := db.SyncSeedModifiers(); err != nil {
 		log.Fatalf("sync modifiers: %v", err)
 	}
+	if err := db.SyncSeedAttacks(); err != nil {
+		log.Fatalf("sync attacks: %v", err)
+	}
 	a.db = db
 }
 
@@ -78,6 +81,38 @@ func (a *App) SaveDraftModifier(m store.DraftModifier) error {
 // DeleteDraftModifier retire un malus/bonus du catalogue.
 func (a *App) DeleteDraftModifier(id string) error {
 	return a.db.DeleteDraftModifier(id)
+}
+
+// GetCharacterAttacks retourne la table complète des attaques, tous
+// personnages confondus — le frontend regroupe par personnage.
+func (a *App) GetCharacterAttacks() ([]store.Attack, error) {
+	return a.db.ListCharacterAttacks()
+}
+
+// SaveCharacterAttack crée (ID 0) ou met à jour une attaque.
+func (a *App) SaveCharacterAttack(attack store.Attack) (store.Attack, error) {
+	return a.db.SaveCharacterAttack(attack)
+}
+
+// DeleteCharacterAttack retire une attaque de la table d'un personnage.
+func (a *App) DeleteCharacterAttack(id int) error {
+	return a.db.DeleteCharacterAttack(id)
+}
+
+// ResetCharacterAttacks efface les attaques d'un personnage et les
+// régénère avec les valeurs par défaut.
+func (a *App) ResetCharacterAttacks(characterID int) error {
+	return a.db.ResetCharacterAttacks(characterID)
+}
+
+// UpdateCharacterManaSettings règle la recharge de mana par manche et,
+// optionnellement, force le nombre max d'attaques (-1 pour revenir au calcul auto).
+func (a *App) UpdateCharacterManaSettings(id int, manaRegen int, maxAttacksOverride int) error {
+	var override *int
+	if maxAttacksOverride >= 0 {
+		override = &maxAttacksOverride
+	}
+	return a.db.UpdateCharacterManaSettings(id, manaRegen, override)
 }
 
 // StartLanServer démarre le petit serveur local et retourne son URL et un

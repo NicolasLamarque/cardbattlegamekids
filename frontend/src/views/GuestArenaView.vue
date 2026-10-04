@@ -1,7 +1,8 @@
 <script setup>
-import { computed } from 'vue'
+import { ref, computed } from 'vue'
 import CardRenderer from '../components/card/CardRenderer.vue'
 import CardBack from '../components/card/CardBack.vue'
+import AttackEffect from '../components/card/AttackEffect.vue'
 import BaseButton from '../components/base/BaseButton.vue'
 import { locations } from '../data/locations.js'
 import { appImage } from '../data/appImages.js'
@@ -10,6 +11,8 @@ const props = defineProps({
   state: { type: Object, required: true },
 })
 const emit = defineEmits(['action'])
+
+const attackMenuFor = ref(null)
 
 const locationImage = computed(() => {
   const loc = locations.find((l) => l.id === props.state.location)
@@ -23,8 +26,12 @@ function toStats(c) {
   return { force: c.force, pv: c.pv }
 }
 
-function place(id) {
-  emit('action', { type: 'place', characterId: id })
+function place(id, attackId) {
+  attackMenuFor.value = null
+  emit('action', { type: 'place', characterId: id, attackId })
+}
+function toggleAttackMenu(id) {
+  attackMenuFor.value = attackMenuFor.value === id ? null : id
 }
 function resolve() {
   emit('action', { type: 'resolve' })
@@ -42,8 +49,17 @@ function nextRound() {
   <div class="p-6">
     <h1 class="text-lg font-medium text-text-primary mb-4">Arène — Équipe Rouge</h1>
 
+    <div v-if="state.winner" class="mb-6 p-4 rounded-card bg-surface-1 border border-accent text-center">
+      <p class="text-lg font-medium text-text-primary">
+        <template v-if="state.winner === 'draw'">Match nul — plus personne ne tient debout !</template>
+        <template v-else-if="state.winner === 'b'">Ton équipe remporte la partie !</template>
+        <template v-else>L'équipe adverse remporte la partie…</template>
+      </p>
+    </div>
+
     <div class="flex items-center justify-center gap-6 mb-2">
-      <div class="w-40 h-64 flex items-center justify-center border border-dashed border-border rounded-card">
+      <div class="relative w-40 h-64 flex items-center justify-center border border-dashed border-border rounded-card">
+        <AttackEffect :color="state.slotOpponent?.attackColor" :active="state.revealed && !!state.slotOpponent?.attackColor" />
         <CardRenderer
           v-if="state.slotOpponent && state.slotOpponent !== 'hidden'"
           :character="toCharacter(state.slotOpponent)"
@@ -54,7 +70,8 @@ function nextRound() {
         <span v-else class="text-text-muted text-sm">Emplacement vide</span>
       </div>
       <span class="text-text-muted font-medium">VS</span>
-      <div class="w-40 h-64 flex items-center justify-center border border-dashed border-border rounded-card">
+      <div class="relative w-40 h-64 flex items-center justify-center border border-dashed border-border rounded-card">
+        <AttackEffect :color="state.slotSelf?.attackColor" :active="state.revealed && !!state.slotSelf?.attackColor" />
         <CardRenderer
           v-if="state.slotSelf"
           :character="toCharacter(state.slotSelf)"
@@ -77,15 +94,26 @@ function nextRound() {
       <BaseButton v-if="state.revealed" variant="secondary" @click="nextRound">Manche suivante</BaseButton>
     </div>
 
-    <p class="text-sm text-force font-medium mb-2">Ta main (clic pour placer)</p>
+    <p class="text-sm text-force font-medium mb-2">Ta main (clic pour placer, re-clic pour lier une attaque)</p>
     <div class="flex gap-3 overflow-x-auto pb-2">
-      <div
-        v-for="c in state.hand"
-        :key="c.id"
-        class="cursor-pointer shrink-0"
-        @click="place(c.id)"
-      >
-        <CardRenderer :character="toCharacter(c)" :stats="toStats(c)" :accent-color="c.accentColor" />
+      <div v-for="c in state.hand" :key="c.id" class="shrink-0 flex flex-col items-center gap-1">
+        <div class="relative cursor-pointer" @click="c.attacks?.length ? toggleAttackMenu(c.id) : place(c.id)">
+          <CardRenderer :character="toCharacter(c)" :stats="toStats(c)" :accent-color="c.accentColor" />
+        </div>
+        <span class="text-xs text-text-muted">⚡ {{ c.mana }}</span>
+        <div v-if="attackMenuFor === c.id" class="flex flex-col gap-1 bg-surface-1 border border-border rounded-card p-2 text-xs">
+          <button class="text-left px-2 py-1 rounded hover:bg-surface-2" @click="place(c.id)">Sans attaque</button>
+          <button
+            v-for="attack in c.attacks"
+            :key="attack.id"
+            class="text-left px-2 py-1 rounded hover:bg-surface-2 disabled:opacity-40"
+            :disabled="c.mana < attack.manaCost"
+            @click="place(c.id, attack.id)"
+          >
+            <span class="inline-block w-2 h-2 rounded-full mr-1" :style="{ backgroundColor: attack.color }"></span>
+            {{ attack.name }} (+{{ attack.forceBonus }} FOR, -{{ attack.manaCost }} mana)
+          </button>
+        </div>
       </div>
     </div>
   </div>

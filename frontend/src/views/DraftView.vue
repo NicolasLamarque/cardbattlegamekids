@@ -41,7 +41,7 @@ onMounted(async () => {
       image: { large: localCharacterImage(c.imageLocal) || c.imageLarge, remote: c.imageLarge },
       favourites: c.favourites,
     },
-    stats: { force: c.force, pv: c.pv },
+    stats: { force: c.force, pv: c.pv, maxMana: c.maxMana, manaRegen: c.manaRegen },
     accentColor: c.seriesColor,
   }))
   modifiersCatalog.value = props.config.modifiersEnabled ? await GetDraftModifiers() : []
